@@ -144,6 +144,10 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\feedbackengine - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\feedbackengine - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\zonixgate - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\zonixgate - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
