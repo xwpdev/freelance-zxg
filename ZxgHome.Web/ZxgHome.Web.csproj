@@ -24,6 +24,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -95,9 +96,11 @@
     <Content Include="Content\css\style.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\city.jpeg" />
+    <Content Include="Content\images\code.jpeg" />
     <Content Include="Content\images\contact-bg.jpg" />
+    <Content Include="Content\images\development.jpg" />
     <Content Include="Content\images\divider-bg.jpg" />
-    <Content Include="Content\images\logo-Fireworks-source.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\newsletter-bg.jpg" />
     <Content Include="Content\images\portfolio-img1.jpg" />
@@ -108,9 +111,8 @@
     <Content Include="Content\images\portfolio-img6.jpg" />
     <Content Include="Content\images\slider\1.jpg" />
     <Content Include="Content\images\slider\2.jpg" />
-    <Content Include="Content\images\team1.jpg" />
-    <Content Include="Content\images\team2.jpg" />
-    <Content Include="Content\images\team3.jpg" />
+    <Content Include="Content\images\vr_headset.jpg" />
+    <Content Include="Content\images\web_banner.jpg" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\custom.js" />
     <Content Include="Content\js\imagesloaded.min.js" />
@@ -120,6 +122,7 @@
     <Content Include="Content\js\jquery.magnific-popup.min.js" />
     <Content Include="Content\js\smoothscroll.js" />
     <Content Include="Content\js\wow.min.js" />
+    <Content Include="favicon.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -148,6 +151,8 @@
     <None Include="Properties\PublishProfiles\feedbackengine - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\zonixgate - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\zonixgate - Web Deploy.pubxml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Web.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

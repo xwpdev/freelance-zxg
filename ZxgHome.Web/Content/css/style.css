@@ -1,11 +1,3 @@
-/*
-
-Template 2081 Solution
-
-http://www.tooplate.com/view/2081-solution
-
-*/
-
 body {
     background: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -23,7 +15,7 @@ p {
 
 /* start all section */
 #service, #divider, #about, #team, #newsletter,
-#pricing, #portfolio, #client, #contact {
+#pricing, #portfolio, #client, #contact, #divider-web {
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
@@ -202,8 +194,27 @@ p {
     #divider h3 {
         padding-bottom: 30px;
     }
-/* end divider */
 
+#divider-web {
+    background: url('../images/web_banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+    #divider-web h2 {
+        font-size: 40px;
+    }
+
+    #divider-web strong {
+        color: #2196f3;
+    }
+
+    #divider-web h3 {
+        padding-bottom: 30px;
+    }
+
+/* end divider */
 /* start about */
 #about h3 {
     color: #2196f3;
