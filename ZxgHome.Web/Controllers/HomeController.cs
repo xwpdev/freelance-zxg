@@ -34,5 +34,12 @@ namespace ZxgHome.Web.Controllers
             return View();
         }
 
+        // POST: Home/PostEmail
+        [HttpPost]
+        public ActionResult PostEmail(string name, string email, string message)
+        {
+            // ViewBag.EmailSuccess = true;
+            return View("Index");
+        }
     }
 }
