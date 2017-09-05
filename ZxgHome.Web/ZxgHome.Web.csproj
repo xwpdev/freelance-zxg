@@ -153,6 +153,9 @@
     <None Include="Properties\PublishProfiles\zonixgate - Web Deploy.pubxml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Web.cshtml" />
+    <Content Include="Views\Home\Game.cshtml" />
+    <Content Include="Views\Home\Vr.cshtml" />
+    <Content Include="Views\Home\Graphics.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
