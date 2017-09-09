@@ -17,14 +17,28 @@ a:hover {
     text-decoration: none;
 }
 /* start all section */
-#service, #divider, #about, #team, #newsletter,
-#pricing, #portfolio, #client, #contact, #divider-web {
+#about, #team, #newsletter,
+#pricing, #portfolio, #client, #contact {
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
+    min-height: 320px;
+}
+
+#service {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+    min-height: 320px;
+}
+
+#divider, #divider-web, #divider-game, #divider-vr, #divider-graphics {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    min-height: 440px;
 }
 /* end all section */
-
 /* start nagivation */
 .navbar-default {
     background: #fff;
@@ -98,6 +112,7 @@ a:hover {
             min-width: 648px;
             min-height: 270px;
             display: block;
+            height: 80vh;
         }
 
         .flexslider .slides > li {
@@ -180,9 +195,13 @@ a:hover {
 
 /* start divider */
 #divider {
-    background: url('../images/divider-bg.jpg');
+    background: url('../images/pages/divider-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #FFFFFF;
 }
 
@@ -199,9 +218,11 @@ a:hover {
     }
 
 #divider-web {
-    background: url('../images/web_banner.jpg');
-    background-size: cover;
+    background: url('../images/pages/web-banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     color: #FFFFFF;
 }
 
@@ -217,6 +238,68 @@ a:hover {
         padding-bottom: 30px;
     }
 
+#divider-game {
+    background: url('../images/pages/game-dev.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+    #divider-game h2 {
+        font-size: 40px;
+    }
+
+    #divider-game strong {
+        color: #2196f3;
+    }
+
+    #divider-game h3 {
+        padding-bottom: 30px;
+    }
+
+#divider-vr {
+    background: url('../images/pages/vr-dev.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+    #divider-vr h2 {
+        font-size: 40px;
+    }
+
+    #divider-vr strong {
+        color: #2196f3;
+    }
+
+    #divider-vr h3 {
+        padding-bottom: 30px;
+    }
+
+#divider-graphics {
+    background: url('../images/pages/graphics.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+    #divider-graphics h2 {
+        font-size: 40px;
+    }
+
+    #divider-graphics strong {
+        color: #2196f3;
+    }
+
+    #divider-graphics h3 {
+        padding-bottom: 30px;
+    }
 /* end divider */
 /* start about */
 #about h3 {
@@ -523,8 +606,10 @@ a:hover {
 /* start contact */
 #contact {
     background: url('../images/contact-bg.jpg');
-    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
 }
 
