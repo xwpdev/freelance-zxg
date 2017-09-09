@@ -1,0 +1,7 @@
+﻿# Make changes for all web spiders
+User-agent: *
+Disallow: /Controllers
+Disallow: /App_Data
+Disallow: /App_Start
+Disallow: /Models
+Disallow: /Web.config
