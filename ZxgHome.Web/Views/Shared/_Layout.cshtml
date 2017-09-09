@@ -8,21 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="web, mobile, desktop, vr, ar, unity, android, seo, development, consultation">
     <meta name="description" content="Make your ideas into reality">
-    <!-- animate -->
-    <link rel="stylesheet" href="/Content/css/animate.min.css" async>
-    <!-- bootstrap -->
-    @*<link rel="stylesheet" href="/Content/css/bootstrap.min.css">*@
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- magnific pop up -->
-    <link rel="stylesheet" href="/Content/css/magnific-popup.css">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="/Content/css/font-awesome.min.css">
-    <!--normalize css-->
-    <link href="~/Content/css/normalize.css" rel="stylesheet" />
-    <!-- google font -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
-    <!-- custom -->
-    <link rel="stylesheet" href="/Content/css/style.css">
 </head>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
     <!-- start navigation -->
@@ -70,6 +55,36 @@
         </div>
     </footer>
     <!-- end footer -->
+    <noscript id="deferred-styles">
+        <!-- animate -->
+        <link rel="stylesheet" href="/Content/css/animate.min.css" async>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="/Content/css/bootstrap.min.css">
+        <!-- magnific pop up -->
+        <link rel="stylesheet" href="/Content/css/magnific-popup.css">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="/Content/css/font-awesome.min.css">
+        <!--normalize css-->
+        <link href="~/Content/css/normalize.css" rel="stylesheet" />
+        <!-- google font -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+        <!-- custom -->
+        <link rel="stylesheet" href="/Content/css/style.css">
+    </noscript>
+    <!--load deferred styles-->
+    <script>
+        var loadDeferredStyles = function () {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
     <!-- jQuery -->
     @*<script src="/Content/js/jquery.js"></script>*@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
