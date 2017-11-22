@@ -8,14 +8,15 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6B8203EC-BAC2-473E-A94A-35D6F68A98C3}</ProjectGuid>
+    <ProjectGuid>{A02CC509-C3AD-42B7-85E9-FDF2D5338372}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZxgHome.Web</RootNamespace>
-    <AssemblyName>ZxgHome.Web</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RootNamespace>VirtualPhotobooth.Web</RootNamespace>
+    <AssemblyName>VirtualPhotobooth.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -23,8 +24,6 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
-    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,21 +48,22 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -89,46 +89,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\animate.min.css" />
-    <Content Include="Content\css\bootstrap.min.css" />
-    <Content Include="Content\css\font-awesome.min.css" />
-    <Content Include="Content\css\magnific-popup.css" />
-    <Content Include="Content\css\normalize.css" />
-    <Content Include="Content\css\style.css" />
-    <Content Include="Content\fonts\fontawesome-webfont.svg" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\images\contact-bg.jpg" />
-    <Content Include="Content\images\pages\divider-bg.jpg" />
-    <Content Include="Content\images\logo.png" />
-    <Content Include="Content\images\newsletter-bg.jpg" />
-    <Content Include="Content\images\pages\game-dev.jpeg" />
-    <Content Include="Content\images\pages\graphics.jpeg" />
-    <Content Include="Content\images\pages\vr-dev.jpg" />
-    <Content Include="Content\images\pages\web-banner.jpg" />
-    <Content Include="Content\images\portfolio-img1.jpg" />
-    <Content Include="Content\images\portfolio-img2.jpg" />
-    <Content Include="Content\images\portfolio-img3.jpg" />
-    <Content Include="Content\images\portfolio-img4.jpg" />
-    <Content Include="Content\images\portfolio-img5.jpg" />
-    <Content Include="Content\images\portfolio-img6.jpg" />
-    <Content Include="Content\images\slider\1.jpg" />
-    <Content Include="Content\images\slider\2.jpg" />
-    <Content Include="Content\images\slider\city.jpg" />
-    <Content Include="Content\images\slider\code.jpeg" />
-    <Content Include="Content\images\slider\development.jpg" />
-    <Content Include="Content\images\slider\vr_headset.jpg" />
-    <Content Include="Content\js\bootstrap.min.js" />
-    <Content Include="Content\js\custom.js" />
-    <Content Include="Content\js\imagesloaded.min.js" />
-    <Content Include="Content\js\isotope.js" />
-    <Content Include="Content\js\jquery.flexslider.js" />
-    <Content Include="Content\js\jquery.js" />
-    <Content Include="Content\js\jquery.magnific-popup.min.js" />
-    <Content Include="Content\js\smoothscroll.js" />
-    <Content Include="Content\js\wow.min.js" />
-    <Content Include="favicon.png" />
+    <Content Include="css\base.css" />
+    <Content Include="css\font-awesome\css\font-awesome.css" />
+    <Content Include="css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\fonts.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\nova\fonts\icomoon.svg" />
+    <Content Include="css\nova\nova.css" />
+    <Content Include="css\vendor.css" />
+    <Content Include="fonts\domine\stylesheet.css" />
     <Content Include="Global.asax" />
-    <Content Include="robots.txt" />
+    <Content Include="images\app-screenshot-big.jpg" />
+    <Content Include="images\app-screenshot-small.jpg" />
+    <Content Include="images\customer01.jpg" />
+    <Content Include="images\customer02.jpg" />
+    <Content Include="images\customer03.jpg" />
+    <Content Include="images\intro-bg.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\sample-image.jpg" />
+    <Content Include="images\shutterbug.jpg" />
+    <Content Include="js\jquery-2.1.3.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\pace.min.js" />
+    <Content Include="js\plugins.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -141,26 +126,45 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="packages.config" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Content\fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Content\fonts\fontawesome-webfont.woff" />
-    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Content\fonts\FontAwesome.otf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Properties\PublishProfiles\feedbackengine - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\feedbackengine - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\zonixgate - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\zonixgate - Web Deploy.pubxml" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="css\nova\fonts\icomoon.eot" />
+    <Content Include="css\nova\fonts\icomoon.ttf" />
+    <Content Include="css\nova\fonts\icomoon.woff" />
+    <Content Include="fonts\domine\domine-bold-webfont.woff" />
+    <Content Include="fonts\domine\domine-bold-webfont.woff2" />
+    <Content Include="fonts\domine\domine-regular-webfont.woff" />
+    <Content Include="fonts\domine\domine-regular-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-black-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-black-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-blackitalic-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-blackitalic-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-bold-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-bold-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-bolditalic-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-bolditalic-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-italic-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-italic-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-light-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-light-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-lightitalic-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-lightitalic-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-medium-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-medium-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-mediumitalic-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-mediumitalic-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-regular-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-regular-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-thin-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-thin-webfont.woff2" />
+    <Content Include="fonts\roboto\roboto-thinitalic-webfont.woff" />
+    <Content Include="fonts\roboto\roboto-thinitalic-webfont.woff2" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Web.cshtml" />
-    <Content Include="Views\Home\Game.cshtml" />
-    <Content Include="Views\Home\Vr.cshtml" />
-    <Content Include="Views\Home\Graphics.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -170,8 +174,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\app\" />
-    <Folder Include="Content\images\portfolio\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
@@ -187,9 +189,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55132</DevelopmentServerPort>
+          <DevelopmentServerPort>49219</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:55132/</IISUrl>
+          <IISUrl>http://localhost:49219/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
